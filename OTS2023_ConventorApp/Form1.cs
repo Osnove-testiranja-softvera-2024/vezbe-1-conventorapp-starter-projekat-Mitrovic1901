@@ -16,5 +16,35 @@ namespace OTS2023_ConventorApp
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           if(radioButton1.Checked)
+            {
+                Mass m = new Mass();
+                double mass = Convert.ToDouble(textBox1.Text);
+                textBox2.Text = mass.ToString();
+                    
+            }
+           else
+            {
+                Length l = new Length();
+                double length = Convert.ToDouble(textBox2.Text);
+              
+
+            }
+        }
     }
 }
+ 
