@@ -33,14 +33,13 @@ namespace OTS2023_ConventorApp
            if(radioButton1.Checked)
             {
                 Mass m = new Mass();
-                double mass = Convert.ToDouble(textBox1.Text);
-                textBox2.Text = mass.ToString();
+                textBox2.Text = m.Convert(double.Parse(textBox1.Text)).ToString();
                     
             }
            else
             {
                 Length l = new Length();
-                double length = Convert.ToDouble(textBox2.Text);
+               textBox2.Text = l.Convert(double.Parse(textBox1.Text)).ToString();
               
 
             }

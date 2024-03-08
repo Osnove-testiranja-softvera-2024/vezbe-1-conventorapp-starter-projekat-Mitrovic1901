@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OTS2023_ConventorApp
 {
-    internal interface IConvert
+    public interface IConvert
     {
         double Convert(double value);
         //
