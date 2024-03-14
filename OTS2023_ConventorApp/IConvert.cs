@@ -9,7 +9,8 @@ namespace OTS2023_ConventorApp
     public interface IConvert
     {
         double Convert(double value);
-        //
+        
+
     }
 }
 

@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace OTS2023_ConventorApp
 {
-    public class Mass : IConvert
+    internal interface IMoneyConvert
     {
-
-
-        public double Convert(double value)
-        {
-
-            return Math.Round(value * 0.454);
-        }
-
+        string ConvertMoney(string value);
     }
-  
 }
